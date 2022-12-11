@@ -62,7 +62,7 @@ def givloc():
             option_flag_1 = 0
             return render_template('givloc.html', name=[minimum, carnum, curr_used])
         else:
-            return "<h1>Your Car is Already there</h1>"
+            return "<h1>Your Electric Vehicle is Already there</h1>"
     else:
         return render_template('options.html')
 
@@ -78,7 +78,7 @@ def givcar():
     try:
         diction[carnum]
     except:
-        return "<h1>Car not there in Parking Area</h1>"
+        return "<h1>Electric Vehicle not there in Parking Area</h1>"
     else:
         plotnum = diction[carnum]
         return render_template('givcar.html', name=plotnum)
@@ -103,7 +103,7 @@ def givexit():
         try:
             diction[carnum]
         except:
-            return "<h1>Car not there in Parking Area</h1>"
+            return "<h1>Electric Vehicle not there in Parking Area</h1>"
         else:
             plotnum = diction[carnum]
             curr_used[plotnum] = 0

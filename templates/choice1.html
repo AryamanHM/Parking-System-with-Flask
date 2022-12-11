@@ -16,7 +16,7 @@
 <div class="split left">
     <div class="contentl">
         <img class="placeholder" src="{{ url_for('static', filename='placeholder.png') }}"  alt="placeholder">
-        <img class="car" src="{{ url_for('static', filename='car.png') }}" alt="car">
+        <img class="ecar" src="{{ url_for('static', filename='ecar.png') }}" alt="car" width="200" height="200">
     </div>
     <h1 class="park">Parking Space Finder</h1>
 </div>
@@ -27,7 +27,7 @@
         </div>
         <div class="frs">
             <form action="http://localhost:5000/givloc" method='POST'>
-                <label style="color: grey;">Car Number</label><br>
+                <label style="color: grey;">EV Number</label><br>
                 <input class="insert" type="text" name="carnum"><br><br>
                 <input class="butn" type="submit" value="Find Parking Location">
             </form>
